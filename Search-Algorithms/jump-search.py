@@ -3,25 +3,19 @@ import math
 def jumpSearch(arr,target):
     n=len(arr)
     #finding the step size to be jumped
-    step=math.sqrt(n)
-
-    #finding the block where element is
+    step=int(math.sqrt(n))
     prev=0
-    while arr[int(min(step,n))]<target:
-        prev=step
-        step+=math.sqrt(n)
-        if prev>=n:
-            return -1
-        
-    #doing a linear search
-    while arr[int(prev)]<target:
-        prev+=1
-        if prev==min(step,n):
-            return -1
-        
-    if arr[int(prev)]==target:
-        return int(prev)
+    current=step
 
+    while current<n and arr[current]<=target:
+        if arr[current]==target:
+            return current
+        prev=current
+        current+=step
+    for i in range(prev,current):
+        if arr[i]==target:
+            return i
+    #If not found
     return -1  
 
 #testing the code

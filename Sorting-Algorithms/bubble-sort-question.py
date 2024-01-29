@@ -27,6 +27,7 @@ def bubbleSort(arr):
             j+=1
         i+=1
     return arr
+
 #Calculating the minimum sum
 def minSum(arr,M):
     l1=bubbleSort(arr)
@@ -34,6 +35,7 @@ def minSum(arr,M):
     for num in range(0,M):
         minsum+=l1[num]
     return minsum
+
 #Calculating the maximum sum
 def maxSum(arr,M):
     l1=bubbleSort(arr)
@@ -42,6 +44,7 @@ def maxSum(arr,M):
     for num in range(N,N-M-1,-1):
         maxsum+=l1[num]
     return maxsum
+
 #Calculating the difference
 array=[6,7,8,9,4,7,4,3]
 max=maxSum(array,2)

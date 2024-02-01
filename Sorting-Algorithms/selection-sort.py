@@ -16,4 +16,5 @@ def selectionSort(arr):
         i+=1
     return arr
 
+#main
 selectionSort([3,5,9,2,7,1,6,8,4])

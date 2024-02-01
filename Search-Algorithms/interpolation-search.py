@@ -1,3 +1,4 @@
+
 def interpolationSearch(arr,target):
     low,high=0,len(arr)-1
 

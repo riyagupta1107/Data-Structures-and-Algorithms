@@ -3,21 +3,17 @@ def Merge(left,right,arr):
     while i<len(left) and j<len(right):
         if left[i]<=right[j]:
             arr[k]=left[i]
-            print(arr[k])
             i=i+1
         else:
             arr[k]=right[j]
-            print(arr[k])
             j=j+1
         k=k+1
     while i<len(left):
         arr[k]=left[i]
-        print(arr[k])
         i=i+1
         k=k+1
     while j<len(right):
         arr[k]=right[j]
-        print(arr[k])
         j=j+1
         k=k+1
     print(arr)

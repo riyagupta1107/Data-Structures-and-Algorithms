@@ -3,7 +3,7 @@ class Node:
     # Function to intialize the node object.
     def __init__(self, data):
         self.data = data  # Assign data
-        self.next = None  # intialize nect as null
+        self.next = None  # intialize next as null
 
 # Linked list class 
 class LinkedList:
